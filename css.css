@@ -10,9 +10,8 @@
 }
 
 @media screen and (max-width: 600px){
-    #intro
-    {background-size: cover;}
-
+    #intro {background-size: cover;}
+    }
 
 .header
 {
