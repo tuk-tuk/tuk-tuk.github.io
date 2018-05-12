@@ -91,7 +91,11 @@ body {
 
 }
 
-
+@media (min-width: 576px) {
+  .slider {
+    width: 300px
+    height: 183px
+      }
 
 
 
