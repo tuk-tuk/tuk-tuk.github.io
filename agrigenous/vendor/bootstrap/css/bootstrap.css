@@ -60,75 +60,18 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: Roboto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  text-align: center;
+  text-align: left;
   background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
-
-.logo {
-  max-width: 200px;
-  padding: 0;
-  }
-
-.slider{
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  object-fit: none;
-
-}
-
-
-@media (max-width: 576px) {
-  .slider {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 91%;
-    }
-
-}
-
-
-
-.about{
-  padding-top: 160px;
-  padding-right: 10%;
-  padding-left: 10%;
-}
-.facilities{
-  padding-top: 160px;
-  padding-right: 10%;
-  padding-left: 10%;
-}
-
-.contact{
-  padding-top: 160px;
-  padding-right: 10%;
-  padding-left: 10%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 hr {
   box-sizing: content-box;
@@ -137,24 +80,14 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: 'BenchNine', sans-serif;
-  font-weight: 500;
-  line-height: 1.2;
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: 'Open Sans Condensed', sans-serif;
 }
-
-.p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
 
 abbr[title],
 abbr[data-original-title] {
@@ -229,8 +162,7 @@ sup {
 
 a {
   color: #007bff;
-  text-decoration: inherit;
-  font-family: 'Economica', sans-serif;
+  text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -426,7 +358,38 @@ template {
   display: none !important;
 }
 
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
 
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
 
 .lead {
   font-size: 1.25rem;
@@ -652,7 +615,8 @@ pre code {
   position: relative;
   width: 100%;
   min-height: 1px;
-
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .col {
@@ -7310,7 +7274,7 @@ button.bg-dark:focus {
 }
 
 .fixed-top {
-  position: sticky;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
